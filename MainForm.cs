@@ -240,7 +240,7 @@ namespace MinecraftJsonGenerator
                 foreach (var modelFile in template.ModelFiles)
                 {
                     string fileName = variant + modelFile.FileSuffix + ".json";
-                    string path = CombinePreviewPath(ns, "models", "block", blockName, GetSelectedBlockTypePath(), blockNameAlt);
+                    string path = CombinePreviewPath(ns, "models", "block", blockName, GetSelectedBlockTypePath(), fileName);
                     lstVariants.Items.Add(path);
                 }
             }
@@ -939,7 +939,7 @@ namespace MinecraftJsonGenerator
             grpPreview.Dock = DockStyle.Fill;
             grpPreview.Location = new Point(10, 26);
             grpPreview.Name = "grpPreview";
-            grpPreview.Size = new Size(336, 565);
+            grpPreview.Size = new Size(364, 565);
             grpPreview.TabIndex = 1;
             grpPreview.TabStop = false;
             grpPreview.Text = "Generated Files Preview";
@@ -954,7 +954,7 @@ namespace MinecraftJsonGenerator
             lstVariants.ItemHeight = 14;
             lstVariants.Location = new Point(3, 19);
             lstVariants.Name = "lstVariants";
-            lstVariants.Size = new Size(330, 543);
+            lstVariants.Size = new Size(358, 543);
             lstVariants.TabIndex = 0;
             // 
             // groupBox5
@@ -1061,7 +1061,7 @@ namespace MinecraftJsonGenerator
             grpWeights.Dock = DockStyle.Fill;
             grpWeights.Location = new Point(10, 110);
             grpWeights.Name = "grpWeights";
-            grpWeights.Size = new Size(233, 481);
+            grpWeights.Size = new Size(205, 481);
             grpWeights.TabIndex = 7;
             grpWeights.TabStop = false;
             grpWeights.Text = "Blockstate weights";
@@ -1072,7 +1072,7 @@ namespace MinecraftJsonGenerator
             flpWeights.ForeColor = Color.Black;
             flpWeights.Location = new Point(3, 19);
             flpWeights.Name = "flpWeights";
-            flpWeights.Size = new Size(227, 459);
+            flpWeights.Size = new Size(199, 459);
             flpWeights.TabIndex = 0;
             // 
             // groupBox2
@@ -1085,7 +1085,7 @@ namespace MinecraftJsonGenerator
             groupBox2.Location = new Point(10, 26);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(10);
-            groupBox2.Size = new Size(233, 84);
+            groupBox2.Size = new Size(205, 84);
             groupBox2.TabIndex = 8;
             groupBox2.TabStop = false;
             groupBox2.Text = "Apparence of Block Item";
@@ -1098,7 +1098,7 @@ namespace MinecraftJsonGenerator
             panel8.Enabled = false;
             panel8.Location = new Point(10, 49);
             panel8.Name = "panel8";
-            panel8.Size = new Size(213, 23);
+            panel8.Size = new Size(185, 23);
             panel8.TabIndex = 2;
             // 
             // cmbItemVariant2
@@ -1111,7 +1111,7 @@ namespace MinecraftJsonGenerator
             cmbItemVariant2.FormattingEnabled = true;
             cmbItemVariant2.Location = new Point(77, 0);
             cmbItemVariant2.Name = "cmbItemVariant2";
-            cmbItemVariant2.Size = new Size(136, 23);
+            cmbItemVariant2.Size = new Size(108, 23);
             cmbItemVariant2.TabIndex = 3;
             // 
             // lblItemVariant2
@@ -1133,7 +1133,7 @@ namespace MinecraftJsonGenerator
             panel7.Dock = DockStyle.Top;
             panel7.Location = new Point(10, 26);
             panel7.Name = "panel7";
-            panel7.Size = new Size(213, 23);
+            panel7.Size = new Size(185, 23);
             panel7.TabIndex = 1;
             // 
             // cmbItemVariant
@@ -1146,7 +1146,7 @@ namespace MinecraftJsonGenerator
             cmbItemVariant.FormattingEnabled = true;
             cmbItemVariant.Location = new Point(77, 0);
             cmbItemVariant.Name = "cmbItemVariant";
-            cmbItemVariant.Size = new Size(136, 23);
+            cmbItemVariant.Size = new Size(108, 23);
             cmbItemVariant.TabIndex = 3;
             // 
             // lblItemVariant
@@ -1200,10 +1200,10 @@ namespace MinecraftJsonGenerator
             groupBox7.Controls.Add(grpPreview);
             groupBox7.Dock = DockStyle.Right;
             groupBox7.ForeColor = Color.White;
-            groupBox7.Location = new Point(738, 0);
+            groupBox7.Location = new Point(710, 0);
             groupBox7.Name = "groupBox7";
             groupBox7.Padding = new Padding(10);
-            groupBox7.Size = new Size(356, 601);
+            groupBox7.Size = new Size(384, 601);
             groupBox7.TabIndex = 13;
             groupBox7.TabStop = false;
             groupBox7.Text = "Output";
@@ -1218,7 +1218,7 @@ namespace MinecraftJsonGenerator
             groupBox8.Location = new Point(485, 0);
             groupBox8.Name = "groupBox8";
             groupBox8.Padding = new Padding(10);
-            groupBox8.Size = new Size(253, 601);
+            groupBox8.Size = new Size(225, 601);
             groupBox8.TabIndex = 14;
             groupBox8.TabStop = false;
             groupBox8.Text = "Customize final result";
